@@ -8,7 +8,10 @@ class NavBar extends React.Component {
   }
 
   handleSelection(event) {
-
+    if(event.target.innerText) {
+      let nextPage = event.target.innerText.toLowerCase();
+      this.props.history.push(`/${nextPage}`);
+    }
   }
 
   render () {
