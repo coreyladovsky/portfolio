@@ -1,16 +1,19 @@
-import React, { Component } from 'react';
-import { Route, Switch } from "react-router-dom";
-import './App.css';
-import NavBar from './components/nav';
+import React, { Component } from "react";
+import { Route, Switch, BrowserRouter } from "react-router-dom";
+import "./App.css";
+import NavBar from "./components/nav";
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <BrowserRouter>
         
-          <Route path="/" component={NavBar} />
-
-      </div>
+        <div className="App">
+          <Switch>
+            <Route path="/" component={NavBar} />
+          </Switch>
+        </div>
+      </BrowserRouter>
     );
   }
 }
