@@ -9,6 +9,7 @@ import photo6 from "../images/pic5.jpg";
 import photo7 from "../images/pic6.jpg";
 import photo8 from "../images/pic7.jpg";
 import photo9 from "../images/pic8.jpg";
+import photo10 from "../images/noboru.jpg";
 import "./photo.css";
 
 class PhotoSlider extends Component {
@@ -40,6 +41,8 @@ class PhotoSlider extends Component {
           <img src={photo8} alt="" />
 
           <img src={photo9} alt="" />
+          
+          <img src={photo10} alt="" />
         </Slider>
       </div>
     );
