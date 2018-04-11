@@ -27,7 +27,11 @@ class NavBar extends React.Component {
           <li>
             <a href={resume} className="resume-link" target="_blank">RESUME</a>
           </li>
+          <li>
+            SKILLS
+          </li>
           <li>CONTACT</li>
+
         </ul>
 
 
