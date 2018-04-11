@@ -3,6 +3,7 @@ import { Route, Switch, BrowserRouter } from "react-router-dom";
 import "./App.css";
 import NavBar from "./components/nav";
 import { About } from "./components/about";
+import { Skills } from "./components/skills";
 import Projects from "./components/project";
 import Contact from "./components/contact";
 
@@ -15,6 +16,7 @@ class App extends Component {
           <Route path="/" component={NavBar} />
           <Switch>
             <Route exact path="/about" component={About} />
+            <Route exact path="/skills" component={Skills} />
             <Route exact path="/projects" component={Projects} />
             <Route exact path="/contact" component={Contact} />
           </Switch>
