@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, withRouter } from "react-router-dom";
+import resume from "../assets/CoreyLadovskyResumev6.pdf";
 
 class NavBar extends React.Component {
   constructor(props) {
@@ -23,7 +24,9 @@ class NavBar extends React.Component {
         <ul onClick={this.handleSelection}>
           <li>ABOUT</li>
           <li>PROJECTS</li>
-          <li>RESUME</li>
+          <li>
+            <a href={resume} className="resume-link" target="_blank">RESUME</a>
+          </li>
           <li>CONTACT</li>
         </ul>
 
