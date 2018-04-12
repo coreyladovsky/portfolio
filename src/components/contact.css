@@ -49,6 +49,7 @@ ul {
 .name-email-input input:focus {
   background: rgba(224, 224, 224, 0.15);
   border: 1px solid white;
+  outline: none;
 
 
 }
@@ -59,14 +60,18 @@ ul {
   padding: 5px;
   border-radius: 4px;
   background: #4eb980;
-      border: solid 1px rgba(224, 224, 224, 0.75)
+  border: solid 1px rgba(224, 224, 224, 0.75)
 
 }
 
 .textarea textarea:focus {
   background: rgba(224, 224, 224, 0.15);
   border: 1px solid white;
+  outline: none;
 }
+
+
+
 
 
 

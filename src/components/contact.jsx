@@ -24,6 +24,7 @@ class Contact extends React.Component {
         </div>
 
         <form
+          autocomplete="off"
           className="email-form"
           method="post"
           action="https://formspree.io/coreyladovsky@gmail.com"
