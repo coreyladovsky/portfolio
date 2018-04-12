@@ -8,7 +8,7 @@ export const About = () => {
     <div className="about-container">
       <div className="about-section">
         <div>
-          <h2>The Why</h2>
+          <h2>THE WHY</h2>
           <p>
             I originally moved to New York to be a professional musican and
             writer. Being an artist, I am always looking for inspiration in
@@ -26,9 +26,11 @@ export const About = () => {
           </p>
         </div>
       </div>
-          <PhotoSlider />
+      <div>
+        <PhotoSlider />
+      </div>
       <div className="about-bonus">
-        <h2>More About Me</h2>
+        <h2>MORE ABOUT ME</h2>
         <p>
           In addition to my programming skills, I have a history as a trained
           improviser. This gives me the ability to think quickly on my feet,
