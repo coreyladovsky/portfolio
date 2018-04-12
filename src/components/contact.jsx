@@ -1,12 +1,13 @@
 import React from "react";
+import "./contact.css";
 
 class Contact extends React.Component {
   render() {
     return (
-      <div>
-        <div>
+      <div className="contact-container">
+        <div className="email-contact-container">
           <h2>GET IN TOUCH</h2>
-          <ul>
+          <ul className="email-links-ul">
             <li>
               <a href="mailto:coreyladovsky@gmail.com">
                 {" "}
@@ -18,34 +19,26 @@ class Contact extends React.Component {
                 coreyladovsky@gmail.com
               </a>
             </li>
+            <li>Brooklyn, New York</li>
           </ul>
         </div>
 
         <form
+          className="email-form"
           method="post"
           action="https://formspree.io/coreyladovsky@gmail.com"
         >
-          <div className="row">
-            <div>
+          <div>
+            <div className="name-email-input">
               <input type="text" name="name" placeholder="Name" />
-            </div>
-            <div>
               <input type="email" name="email" placeholder="Email" />
             </div>
           </div>
-          <div>
-            <div>
-              <textarea name="message" placeholder="Message" rows="6" />
-            </div>
+          <div className="textarea">
+            <textarea name="message" placeholder="Message" rows="6" />
           </div>
           <div>
-            <div>
-              <ul className="actions">
-                <li>
-                  <input type="submit" value="Send Message" />
-                </li>
-              </ul>
-            </div>
+            <input type="submit" value="Send Message" />
           </div>
         </form>
 
