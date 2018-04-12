@@ -38,8 +38,8 @@ class Contact extends React.Component {
           <div className="textarea">
             <textarea name="message" placeholder="Message" rows="6" />
           </div>
-          <div>
-            <input type="submit" value="Send Message" />
+          <div className="sumbit-container">
+            <input className="submit" type="submit" value="SEND MESSAGE" />
           </div>
         </form>
 
