@@ -109,9 +109,21 @@ ul {
 }
 
 
+.link-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  font-size: 25px;
+  margin: auto;
+  margin-top: 25px;
+  max-width: 715px;
 
+}
 
+.link-list a {
+  color: white;
 
+}
 
 
 
