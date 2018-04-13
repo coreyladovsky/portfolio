@@ -5,7 +5,7 @@ class ProjectItem extends React.Component {
     const { image, liveLink, repoLink, description, title } = this.props;
     return(
       <div>
-        <div>title</div>
+        <div>{title}</div>
         <img src={image} alt=""/>
         <div>{description}</div>
        <a href={liveLink} target="_blank">Live</a>
