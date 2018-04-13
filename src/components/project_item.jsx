@@ -6,9 +6,12 @@ class ProjectItem extends React.Component {
     const { image, liveLink, repoLink, description, title, facon } = this.props;
     return (
       <div className="project-container">
-        <img className="project-image" src={image} alt="" />
+        <div className="img-container">
+          <div className="blue-effect"></div>
+          <img className="project-image" src={image} alt="" />
+          <i className={facon} aria-hidden="true"></i>
+        </div>
 
-        <i className={facon} aria-hidden="true"></i>
         <h2 className="project-title">{title}</h2>
         <div className="project-description">{description}</div>
         <div className="project-links">
