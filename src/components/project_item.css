@@ -13,6 +13,16 @@
   grid-column: 1 / -1;
 }
 
+.img-container:hover .blue-effect {
+  background-color: rgba(0, 0, 255, 0.8);
+
+}
+
+.img-container:hover .fa {
+  font-size: 80px;
+}
+
+
 .project-image {
   grid-column: 1/ -1;
   grid-row: 1 / -1;
@@ -48,6 +58,64 @@
   margin-left: 5px;
 }
 
-.project-links a:hover {
-  color: red;
+.project-links a {
+  text-decoration: none;
+  color: #4eb980;
 }
+
+.project-links a:hover {
+  text-decoration: underline;
+}
+
+
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-auto-rows: minmax(200px, auto);
+  grid-gap: 1em;
+}
+
+@media only screen and (min-width: 820px) {
+
+  .project-container {
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-auto-rows: minmax(400px, auto);
+  }
+
+
+  .firstImg {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .secondImg {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* comment */
