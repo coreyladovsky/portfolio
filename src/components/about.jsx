@@ -6,6 +6,8 @@ export const About = () => {
   return (
 
     <div className="about-container">
+      <h1>COREY LADOVSKY</h1>
+      <h3>Software Engineer</h3>
       <div className="about-section">
         <div>
           <h2>THE WHY</h2>

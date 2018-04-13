@@ -1,18 +1,27 @@
-import React from 'react';
+import React from "react";
+import "./project_item.css";
 
 class ProjectItem extends React.Component {
-  render () {
-    const { image, liveLink, repoLink, description, title } = this.props;
-    return(
-      <div>
-        <div>{title}</div>
-        <img src={image} alt=""/>
-        <div>{description}</div>
-       <a href={liveLink} target="_blank">Live</a>
-       <a href={repoLink} target="_blank">Code</a>
+  render() {
+    const { image, liveLink, repoLink, description, title, facon } = this.props;
+    return (
+      <div className="project-container">
+        <img className="project-image" src={image} alt="" />
+
+        <i className={facon} aria-hidden="true"></i>
+        <h2 className="project-title">{title}</h2>
+        <div className="project-description">{description}</div>
+        <div className="project-links">
+          <a href={liveLink} target="_blank">
+            Live
+          </a>
+           •
+          <a href={repoLink} target="_blank">
+            Code
+          </a>
+        </div>
       </div>
     );
-
   }
 }
 
