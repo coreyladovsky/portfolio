@@ -1,11 +1,22 @@
 import React from 'react';
 import { Link, withRouter } from "react-router-dom";
 import resume from "../assets/resume.pdf";
+import $ from "jquery";
 
-class NavBar extends React.Component {
+class Home extends React.Component {
   constructor(props) {
     super(props);
     this.handleSelection = this.handleSelection.bind(this);
+  }
+
+  componentDidMount() {
+    if(this.props.match.path === "/*") {
+    $("#navBar-container").hide();
+    }
+  }
+
+  componentWillUnmount() {
+    $("#navBar-container").show();
   }
 
   handleSelection(event) {
@@ -20,9 +31,8 @@ class NavBar extends React.Component {
 
   render () {
     return(
-      <div id="navBar-container">
+      <div>
         <ul onClick={this.handleSelection}>
-          <li>HOME</li>
           <li>ABOUT</li>
           <li>PROJECTS</li>
           <li>
@@ -42,4 +52,4 @@ class NavBar extends React.Component {
   }
 }
 
-export default withRouter(NavBar);
+export default withRouter(Home);
