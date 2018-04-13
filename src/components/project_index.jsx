@@ -11,7 +11,7 @@ import './project_index.css';
 class ProjectIndex extends React.Component {
   render() {
     return (
-      <div>
+      <div className="all-projects-container">
         <ProjectItem
           title={"Help"}
           liveLink={"https://www.corey-ladovsky-help.club"}
