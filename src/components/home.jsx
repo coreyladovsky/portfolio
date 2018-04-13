@@ -2,6 +2,7 @@ import React from 'react';
 import { Link, withRouter } from "react-router-dom";
 import resume from "../assets/resume.pdf";
 import $ from "jquery";
+import "./home.css";
 
 class Home extends React.Component {
   constructor(props) {
@@ -32,7 +33,7 @@ class Home extends React.Component {
   render () {
     return(
       <div>
-        <ul onClick={this.handleSelection}>
+        <ul onClick={this.handleSelection} className="home-ul">
           <li>ABOUT</li>
           <li>PROJECTS</li>
           <li>
