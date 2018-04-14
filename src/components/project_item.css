@@ -102,6 +102,31 @@
 }
 
 
+@media only screen and (min-width: 800px) {
+
+  .project-info-container {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  .project-title {
+    font-size: 40px;
+    grid-column: 1 / -1;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .project-description {
+    grid-column: 2 / -2;
+    align-items: center;
+  }
+
+  .project-links {
+    grid-column: 4 / span 2;
+  }
+}
+
 
 
 
