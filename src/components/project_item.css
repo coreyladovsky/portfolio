@@ -79,6 +79,7 @@
   /* grid-gap: 1em; */
 }
 
+
 @media only screen and (min-width: 820px) {
 
   .project-container {
@@ -103,6 +104,11 @@
 
 
 @media only screen and (min-width: 800px) {
+  .project-title {
+    font-size: 40px;
+  }
+
+}
 
   .project-info-container {
     display: grid;
@@ -111,7 +117,8 @@
   }
 
   .project-title {
-    font-size: 40px;
+    display: flex;
+    font-size: 25px;
     grid-column: 1 / -1;
     align-items: center;
     justify-content: center;
@@ -119,13 +126,15 @@
 
   .project-description {
     grid-column: 2 / -2;
+    grid-row: 2;
     align-items: center;
   }
 
   .project-links {
     grid-column: 4 / span 2;
+    grid-row: 3;
   }
-}
+
 
 
 
