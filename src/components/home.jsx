@@ -34,13 +34,13 @@ class Home extends React.Component {
     return(
       <div>
         <ul onClick={this.handleSelection} className="home-ul">
-          <li>ABOUT</li>
-          <li>PROJECTS</li>
-          <li>
+          <li className="about-li">ABOUT</li>
+          <li className="projects-li">PROJECTS</li>
+          <li className="skills-li">
             SKILLS
           </li>
-          <li>CONTACT</li>
-          <li>
+          <li className="contact-li">CONTACT</li>
+          <li className="resume-li">
             <a href={resume} className="resume-link" target="_blank">RESUME</a>
           </li>
 
