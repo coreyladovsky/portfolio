@@ -10,6 +10,7 @@ import photo7 from "../images/pic6.jpg";
 import photo8 from "../images/pic7.jpg";
 import photo9 from "../images/pic8.jpg";
 import photo10 from "../images/noboru.jpg";
+import photo11 from "../images/dashiki.jpg";
 import "./photo.css";
 
 class PhotoSlider extends Component {
@@ -25,6 +26,8 @@ class PhotoSlider extends Component {
       <div>
         <Slider {...settings}>
           <img className="photo-carousel" src={photo1} alt="" />
+
+          <img className="photo-carousel" src={photo11} alt="" />
 
           <img className="photo-carousel" src={photo2} alt="" />
 

@@ -9,30 +9,26 @@ class NavBar extends React.Component {
   }
 
   handleSelection(event) {
-    if(event.target.innerText) {
-      let nextPage = event.target.innerText.toLowerCase();
-      if(nextPage !== "resume") {
-        this.props.history.push(`/${nextPage}`);
+          this.props.history.push(`/home`);
 
-      }
-    }
+    // if(event.target.innerText) {
+    //   let nextPage = event.target.innerText.toLowerCase();
+    //   if(nextPage !== "resume") {
+    //     if(nextPage === "about") {
+    //       this.props.history.push(`/`);
+    //     } else {
+    //       this.props.history.push(`/${nextPage}`);
+    //     }
+    //   }
+    // }
   }
 
   render () {
     return(
       <div id="navBar-container">
         <ul onClick={this.handleSelection}>
-          <li>HOME</li>
-          <li>ABOUT</li>
-          <li>PROJECTS</li>
-          <li>
-            SKILLS
-          </li>
-          <li>CONTACT</li>
-          <li>
-            <a href={resume} className="resume-link" target="_blank">RESUME</a>
-          </li>
-
+          <i class="fas fa fa-bars"></i>
+          <div> MENU </div>
         </ul>
 
 

@@ -29,7 +29,7 @@ class App extends Component {
         <div className="App">
           <Route path="/" component={NavBar} />
           <Switch>
-            <Route exact path="/about" component={About} />
+            <Route exact path="/" component={About} />
             <Route exact path="/skills" component={Skills} />
             <Route exact path="/projects" component={ProjectIndex} />
             <Route exact path="/contact" component={Contact} />

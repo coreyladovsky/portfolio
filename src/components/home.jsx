@@ -24,8 +24,11 @@ class Home extends React.Component {
     if(event.target.innerText) {
       let nextPage = event.target.innerText.toLowerCase();
       if(nextPage !== "resume") {
-        this.props.history.push(`/${nextPage}`);
-
+        if(nextPage === "about") {
+          this.props.history.push(`/`);
+        } else {
+          this.props.history.push(`/${nextPage}`);
+        }
       }
     }
   }
