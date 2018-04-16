@@ -1,8 +1,10 @@
 import React from "react";
 import PhotoSlider from "./photos";
 import "./about.css";
+import $ from "jquery";
 
-export const About = () => {
+export const About = (props) => {
+  $("html").css("background", "darkred");
   return (
 
     <div className="about-container">
