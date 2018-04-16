@@ -18,7 +18,7 @@ class About extends React.Component {
         <div className="about-section">
           <div>
             <h2>THE WHY</h2>
-            <p>
+            <p className="bio">
               I originally moved to New York to be a professional musican and
               writer. Being an artist, I am always looking for inspiration in
               everything; I look for that special something that ignites a spark

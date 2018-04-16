@@ -25,9 +25,9 @@ class PhotoSlider extends Component {
     return (
       <div>
         <Slider {...settings}>
-          <img className="photo-carousel" src={photo1} alt="" />
-
           <img className="photo-carousel" src={photo11} alt="" />
+
+          <img className="photo-carousel" src={photo1} alt="" />
 
           <img className="photo-carousel" src={photo2} alt="" />
 

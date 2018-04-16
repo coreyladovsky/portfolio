@@ -14,6 +14,7 @@ class Home extends React.Component {
     if(this.props.match.path === "/*") {
     $("#navBar-container").hide();
     }
+    
   }
 
   componentWillUnmount() {
@@ -46,7 +47,7 @@ class Home extends React.Component {
             SKILLS
           </li>
           <li className="contact-li">CONTACT</li>
-  
+
             <a href={resume} className="resume-link resume-li" target="_blank">RESUME</a>
 
 

@@ -17,6 +17,10 @@
   font-weight: bold;
 }
 
+.bio {
+  margin-bottom: 10px;
+}
+
 .about-section {
   display: grid;
   grid-template-columns: 1fr;
