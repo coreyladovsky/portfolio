@@ -1,16 +1,21 @@
 import React from 'react';
 import { withRouter } from "react-router-dom";
-// import resume from "../assets/resume.pdf";
+import resume from "../assets/resume.pdf";
 import "./nav.css";
 
 class NavBar extends React.Component {
   constructor(props) {
     super(props);
     this.handleSelection = this.handleSelection.bind(this);
+    this.toggleNav = this.toggleNav.bind(this);
+  }
+
+  toggleNav() {
+    
   }
 
   handleSelection(event) {
-          this.props.history.push(`/home`);
+          // this.props.history.push(`/home`);
 
     // if(event.target.innerText) {
     //   let nextPage = event.target.innerText.toLowerCase();
@@ -30,6 +35,22 @@ class NavBar extends React.Component {
       <div id="navBar-container">
         <div className="menu" >
           <i className="fas fa fa-bars menu-bars" onClick={this.handleSelection}></i>
+        </div>
+        <div>
+          <ul onClick={this.handleSelection} className="nav-ul">
+            <div className="close-nav" onClick={this.toggleNav}>X</div>
+            <li className="about-nav">ABOUT</li>
+            <li className="projects-nav">PROJECTS</li>
+            <li className="skills-nav">
+              SKILLS
+            </li>
+            <li className="contact-nav">CONTACT</li>
+
+              <a href={resume} className="resume-link resume-nav" target="_blank">RESUME</a>
+          </ul>
+
+
+
         </div>
 
 
