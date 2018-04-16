@@ -1,6 +1,7 @@
 import React from 'react';
 import { withRouter } from "react-router-dom";
-import resume from "../assets/resume.pdf";
+// import resume from "../assets/resume.pdf";
+import "./nav.css";
 
 class NavBar extends React.Component {
   constructor(props) {
@@ -23,13 +24,13 @@ class NavBar extends React.Component {
     // }
   }
 
+  // <div> MENU </div>
   render () {
     return(
       <div id="navBar-container">
-        <ul onClick={this.handleSelection}>
-          <i class="fas fa fa-bars"></i>
-          <div> MENU </div>
-        </ul>
+        <div className="menu" onClick={this.handleSelection}>
+          <i className="fas fa fa-bars menu-bars"></i>
+        </div>
 
 
 

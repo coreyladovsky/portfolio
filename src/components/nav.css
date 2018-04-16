@@ -1,0 +1,13 @@
+.menu {
+  display: flex;
+  font-size: 16px;
+  justify-content: flex-end;
+  /* margin-top: 10px; */
+  /* margin-right: 10px; */
+}
+
+
+.menu-bars {
+  padding: 25px;
+  font-size: 40px;
+}

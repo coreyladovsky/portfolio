@@ -4,8 +4,14 @@ import $ from "jquery";
 
 
 class Contact extends React.Component {
-  render() {
+
+  componentDidMount() {
+    $(".menu-bars").css("color", "white");
     $("html").css("background", "#4eb980");
+  }
+
+
+  render() {
     return (
       <div className="contact-container">
         <div className="email-contact-container">

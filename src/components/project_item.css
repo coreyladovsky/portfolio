@@ -36,7 +36,7 @@
   height: 100%;
 }
 
-.fa {
+.icon {
   transition: font-size 300ms ease-in-out;
   grid-column: 3;
   grid-row: 3;

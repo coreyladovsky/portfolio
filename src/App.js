@@ -3,8 +3,8 @@ import { Route, Switch, BrowserRouter } from "react-router-dom";
 import "./App.css";
 import NavBar from "./components/nav";
 import Home from "./components/home";
-import { About } from "./components/about";
-import { Skills } from "./components/skills";
+import About from "./components/about";
+import Skills from "./components/skills";
 import ProjectIndex from "./components/project_index";
 import Contact from "./components/contact";
 
