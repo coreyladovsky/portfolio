@@ -11,3 +11,7 @@
   padding: 25px;
   font-size: 40px;
 }
+
+.menu-bars:hover {
+  cursor: pointer;
+}

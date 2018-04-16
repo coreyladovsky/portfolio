@@ -1,12 +1,15 @@
 import React from "react";
 import "./project_item.css";
+import $ from "jquery";
+
 
 class ProjectItem extends React.Component {
-  constructor(props) {
-    super();
+
+  componentDidMount() {
+    $(".menu-bars").css("color", "black");
+    $("html").css("background", "white");
 
   }
-
 
   render() {
     const { image, liveLink, repoLink, description, title, facon, orderFirst, orderSecond } = this.props;

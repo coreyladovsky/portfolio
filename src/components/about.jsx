@@ -4,9 +4,6 @@ import "./about.css";
 import $ from "jquery";
 
 class About extends React.Component {
-  constructor(props) {
-    super(props);
-  }
 
   componentDidMount() {
     $(".menu-bars").css("color", "white");

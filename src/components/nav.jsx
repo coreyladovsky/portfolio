@@ -28,8 +28,8 @@ class NavBar extends React.Component {
   render () {
     return(
       <div id="navBar-container">
-        <div className="menu" onClick={this.handleSelection}>
-          <i className="fas fa fa-bars menu-bars"></i>
+        <div className="menu" >
+          <i className="fas fa fa-bars menu-bars" onClick={this.handleSelection}></i>
         </div>
 
 

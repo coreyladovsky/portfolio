@@ -21,6 +21,7 @@ class Home extends React.Component {
   }
 
   handleSelection(event) {
+    // debugger
     if(event.target.innerText) {
       let nextPage = event.target.innerText.toLowerCase();
       if(nextPage !== "resume") {
@@ -29,6 +30,8 @@ class Home extends React.Component {
         } else {
           this.props.history.push(`/${nextPage}`);
         }
+      } else {
+        $(".resume-link").click();
       }
     }
   }
@@ -43,9 +46,9 @@ class Home extends React.Component {
             SKILLS
           </li>
           <li className="contact-li">CONTACT</li>
-          <li className="resume-li">
-            <a href={resume} className="resume-link" target="_blank">RESUME</a>
-          </li>
+  
+            <a href={resume} className="resume-link resume-li" target="_blank">RESUME</a>
+
 
         </ul>
 
