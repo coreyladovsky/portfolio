@@ -40,7 +40,7 @@ class About extends React.Component {
         </div>
         <div className="about-bonus">
           <h2>MORE ABOUT ME</h2>
-          <p>
+          <p className="bio">
             In addition to my programming skills, I have a history as a trained
             improviser. This gives me the ability to think quickly on my feet,
             work well with others, and be extremely flexible to fast changing

@@ -1,7 +1,6 @@
 .about-container {
   font-family: 'Alegreya Sans', sans-serif;
   text-align: center;
-  background: darkred;
   color: white;
   max-width: 820px;
   margin: auto;
@@ -18,7 +17,7 @@
 }
 
 .bio {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .about-section {
