@@ -34,21 +34,21 @@
 }
 
 .photo-carousel {
-  max-width: 400px;
-  height: 400px;
+  max-width: 375px;
+  height: 375px;
   object-fit: cover;
 }
 
 
 .slick-list {
-  max-width: 400px;
-  max-height: 400px;
+  max-width: 375px;
+  max-height: 375px;
   border-radius: 10px;
   margin: auto;
 }
 
 .slick-slider {
-  max-width: 500px;
+  max-width: 475px;
   margin: auto;
 }
 
@@ -62,6 +62,11 @@
 
 .slick-dots li.slick-active button:before {
   color: white;
+}
+
+.slick-slider .slick-initialized {
+  display: flex;
+  justify-content: space-around;
 }
 
 .slick-dots li button:before  {
