@@ -7,7 +7,7 @@ class About extends React.Component {
 
   componentDidMount() {
     $(".menu-bars").css("color", "white");
-    $("html").css("background", "darkred");
+    $("html").css("background", "linear-gradient(darkred, black)");
   }
 
   render() {
@@ -16,6 +16,7 @@ class About extends React.Component {
         <h1>COREY LADOVSKY</h1>
         <h3>Software Engineer</h3>
         <div className="about-section">
+              <PhotoSlider />
           <div>
             <h2>THE WHY</h2>
             <p className="bio">
@@ -36,10 +37,9 @@ class About extends React.Component {
           </div>
         </div>
         <div>
-          <PhotoSlider />
+
         </div>
         <div className="about-bonus">
-          <h2>MORE ABOUT ME</h2>
           <p className="bio">
             In addition to my programming skills, I have a history as a trained
             improviser. This gives me the ability to think quickly on my feet,

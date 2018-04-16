@@ -17,11 +17,13 @@
 
 .img-container:hover .blue-effect {
   background-color: rgba(0, 0, 255, 0.8);
+  cursor: pointer;
 
 }
 
 .img-container:hover .fa {
   font-size: 80px;
+  cursor: pointer;
 
 }
 

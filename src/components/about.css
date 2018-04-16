@@ -7,8 +7,9 @@
 }
 
 .about-container h1 {
-    font-weight: bold;
+    font-weight: 100;
     font-size: 45px;
+    font-family: 'Stardos Stencil', cursive;
 }
 
 .about-container h2 {
@@ -16,8 +17,14 @@
   font-weight: bold;
 }
 
-.bio {
+.about-container h3 {
   margin-bottom: 15px;
+}
+
+.bio {
+  margin: 15px;
+  font-family: 'Dosis', sans-serif;
+  text-align: left;
 }
 
 .about-section {

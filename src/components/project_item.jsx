@@ -1,21 +1,30 @@
 import React from "react";
 import "./project_item.css";
 import $ from "jquery";
+import { withRouter } from "react-router-dom";
 
 
 class ProjectItem extends React.Component {
+  constructor(props){
+    super(props);
+    this.goToLink = this.goToLink.bind(this);
+  }
 
   componentDidMount() {
     $(".menu-bars").css("color", "black");
     $("html").css("background", "white");
+  }
 
+  goToLink(liveLink) {
+    debugger
+    window.location(liveLink);
   }
 
   render() {
     const { image, liveLink, repoLink, description, title, facon, orderFirst, orderSecond } = this.props;
     return (
       <div className="project-container">
-        <div className={"img-container " + orderFirst}>
+        <div className={"img-container " + orderFirst} onClick={(e) => this.goToLink(liveLink)}>
           <div className="blue-effect"></div>
           <img className="project-image" src={image} alt="" />
           <i className={facon} aria-hidden="true"></i>
@@ -40,4 +49,4 @@ class ProjectItem extends React.Component {
   }
 }
 
-export default ProjectItem;
+export default withRouter(ProjectItem);
