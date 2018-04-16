@@ -7,9 +7,12 @@ import MasterDomain from "../images/master_of_the_domain.png";
 import StockStudy from "../images/stock_study.png";
 import Carousel from "../images/carousel.png";
 import './project_index.css';
+import $ from "jquery";
+
 
 class ProjectIndex extends React.Component {
   render() {
+    $("html").css("background", "white");
     return (
       <div className="all-projects-container">
         <ProjectItem

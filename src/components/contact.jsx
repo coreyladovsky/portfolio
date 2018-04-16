@@ -1,8 +1,11 @@
 import React from "react";
 import "./contact.css";
+import $ from "jquery";
+
 
 class Contact extends React.Component {
   render() {
+    $("html").css("background", "#4eb980");
     return (
       <div className="contact-container">
         <div className="email-contact-container">
@@ -24,7 +27,7 @@ class Contact extends React.Component {
         </div>
 
         <form
-          autocomplete="off"
+          autoComplete="off"
           className="email-form"
           method="post"
           action="https://formspree.io/coreyladovsky@gmail.com"
@@ -49,6 +52,7 @@ class Contact extends React.Component {
               className="githublink"
               href="https://github.com/coreyladovsky"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <i className="fa fa-github" aria-hidden="true" />
             </a>
@@ -58,6 +62,7 @@ class Contact extends React.Component {
               className="linked-in-link"
               href="https://www.linkedin.com/in/corey-ladovsky/"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <i className="fa fa-linkedin" aria-hidden="true" />
             </a>
@@ -67,6 +72,7 @@ class Contact extends React.Component {
               className="linked-in-link"
               href="https://angel.co/corey-ladovsky"
               target="_blank"
+              rel="noopener noreferrer"
             >
               {" "}
               <i className="fa fa-angellist" aria-hidden="true" />

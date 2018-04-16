@@ -1,8 +1,10 @@
 import React from "react";
 import reduxPic from "../images/redux.png";
 import "./skills.css";
+import $ from "jquery";
 
 export const Skills = () => {
+  $("html").css("background", "black");
   return (
     <div>
       <ul className="all-skills">

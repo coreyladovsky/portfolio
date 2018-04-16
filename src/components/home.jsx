@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, withRouter } from "react-router-dom";
+import { withRouter } from "react-router-dom";
 import resume from "../assets/resume.pdf";
 import $ from "jquery";
 import "./home.css";
