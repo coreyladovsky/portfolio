@@ -17,7 +17,7 @@ class Skills extends React.Component {
             <i className="devicon-react-plain colored skill" />
             React
           </li>
-          <li>
+          <li className="redux-li">
             <img className="redux-pic" src={reduxPic} alt="" />
             Redux
           </li>
