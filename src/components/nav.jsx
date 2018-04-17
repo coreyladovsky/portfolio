@@ -42,8 +42,7 @@ class NavBar extends React.Component {
         }
       }
     }
-    $(".nav-container").css("display", "none");
-    this.showing = false;
+    this.toggleNav();
   }
 
   // <div> MENU </div>
