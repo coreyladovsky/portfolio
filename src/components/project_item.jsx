@@ -16,8 +16,7 @@ class ProjectItem extends React.Component {
   }
 
   goToLink(liveLink) {
-    debugger
-    window.location(liveLink);
+    window.open(liveLink, '_blank');
   }
 
   render() {
