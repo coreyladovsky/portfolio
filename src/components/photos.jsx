@@ -23,7 +23,7 @@ class PhotoSlider extends Component {
       slidesToScroll: 1
     };
     return (
-      <div>
+      <div className="photo-container-main">
         <Slider {...settings}>
           <img className="photo-carousel" src={photo11} alt="" />
 

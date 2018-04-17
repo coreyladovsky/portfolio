@@ -3,6 +3,7 @@
   text-align: center;
   color: white;
   max-width: 820px;
+  min-width: 375px;
   margin: auto;
 }
 
@@ -34,14 +35,14 @@
 }
 
 .photo-carousel {
-  max-width: 375px;
-  height: 375px;
+  max-width: 373px;
+  height: 373px;
   object-fit: cover;
 }
 
 
 .slick-list {
-  max-width: 375px;
+  max-width: 373px;
   max-height: 375px;
   border-radius: 10px;
   margin: auto;

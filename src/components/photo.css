@@ -23,3 +23,7 @@
     opacity: .75;
     color: black;
 } */
+
+.photo-container-main {
+  overflow: hidden;
+}
