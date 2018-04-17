@@ -14,9 +14,18 @@ class NavBar extends React.Component {
 
   toggleNav() {
     if(this.showing) {
-      $(".nav-container").css("display", "none");
+      // debugger
+
+      $(".nav-container").removeClass("slideInLeft");
+      $(".nav-container").addClass("slideOutLeft");
+      setTimeout(()=> {
+        $(".nav-container").css("display", "none");
+
+      }, 500);
     } else {
       $(".nav-container").css("display", "grid");
+      $(".nav-container").removeClass("slideOutLeft");
+      $(".nav-container").addClass("slideInLeft");
 
     }
     this.showing = !this.showing;
