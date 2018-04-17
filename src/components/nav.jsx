@@ -7,29 +7,34 @@ import $ from "jquery";
 class NavBar extends React.Component {
   constructor(props) {
     super(props);
+    this.showing = false;
     this.handleSelection = this.handleSelection.bind(this);
     this.toggleNav = this.toggleNav.bind(this);
   }
 
   toggleNav() {
-    $(".nav-container").css("display", "none");
+    if(this.showing) {
+      $(".nav-container").css("display", "none");
+    } else {
+      $(".nav-container").css("display", "grid");
+
+    }
+    this.showing = !this.showing;
   }
 
   handleSelection(event) {
-    $(".nav-container").css("display", "block");
-
-          // this.props.history.push(`/home`);
-
-    // if(event.target.innerText) {
-    //   let nextPage = event.target.innerText.toLowerCase();
-    //   if(nextPage !== "resume") {
-    //     if(nextPage === "about") {
-    //       this.props.history.push(`/`);
-    //     } else {
-    //       this.props.history.push(`/${nextPage}`);
-    //     }
-    //   }
-    // }
+    if(event.target.innerText) {
+      let nextPage = event.target.innerText.toLowerCase();
+      if(nextPage !== "resume") {
+        if(nextPage === "about") {
+          this.props.history.push(`/`);
+        } else {
+          this.props.history.push(`/${nextPage}`);
+        }
+      }
+    }
+    $(".nav-container").css("display", "none");
+    this.showing = false;
   }
 
   // <div> MENU </div>
@@ -37,7 +42,7 @@ class NavBar extends React.Component {
     return(
       <div id="navBar-container">
         <div className="menu" >
-          <i className="fas fa fa-bars menu-bars" onClick={this.handleSelection}></i>
+          <i className="fas fa fa-bars menu-bars" onClick={this.toggleNav}></i>
         </div>
         <div>
           <div className="nav-container">

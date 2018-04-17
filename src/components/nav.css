@@ -5,6 +5,7 @@
 }
 
 
+
 .menu-bars {
   padding: 25px;
   font-size: 40px;
@@ -31,7 +32,7 @@
   font-family: 'Stardos Stencil', cursive;
   font-size: 45px;
   z-index: 100;
-  display: grid;
+  display: none;
   grid-template-rows: 1fr 5fr;
 }
 
@@ -43,7 +44,6 @@
 .close-nav div {
   padding: 25px;
   font-size: 50px;
-  margin-right: 20px;
 }
 
 .close-nav div:hover {
