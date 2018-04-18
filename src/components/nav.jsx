@@ -33,11 +33,11 @@ class NavBar extends React.Component {
     if (event.target.className === "li-selector") {
       let nextPage = event.target.innerText.toLowerCase();
       if (nextPage !== "resume") {
-        if (nextPage === "about") {
-          this.props.history.push(`/`);
-        } else {
+        // if (nextPage === "about") {
+        //   this.props.history.push(`/`);
+        // } else {
           this.props.history.push(`/${nextPage}`);
-        }
+        // }
       }
     }
     this.toggleNav();
