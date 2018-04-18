@@ -61,7 +61,7 @@
   align-items: center;
   list-style: none;
   margin-left: 5%;
-  
+
 }
 
 .nav-ul li:hover {
@@ -101,15 +101,25 @@
 }
 
 
+.li-selector {
+  display: inline;
+  transition: all 300ms ease-in-out;
+
+}
 
 
+.li-selector:hover {
+  font-size: 60px;
+}
 
 
+.li-selector a:hover {
+  font-size: 60px;
+}
 
-
-
-
-
+.li-selector a {
+  transition: all 300ms ease-in-out;
+}
 
 
 
