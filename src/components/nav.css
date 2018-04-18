@@ -6,12 +6,12 @@
 
 
 
-.menu-bars {
+.menuBars {
   padding: 25px;
   font-size: 40px;
 }
 
-.menu-bars:hover {
+.menuBars:hover {
   cursor: pointer;
 }
 
@@ -19,7 +19,7 @@
   z-index: 2;
 }
 
-.nav-container {
+.navContainer {
   position: fixed;
   width: 100%;
   top: 0;
@@ -33,21 +33,21 @@
   display: none;
 }
 
-.close-nav {
+.closeNav {
   font-family: sans-serif;
   text-align: right;
 }
 
-.close-nav div {
+.closeNav div {
   padding: 25px;
   font-size: 50px;
 }
 
-.close-nav div:hover {
+.closeNav div:hover {
   cursor: pointer;
 }
 
-.resume-nav {
+.resumeNav {
   font-family: 'Stardos Stencil', cursive;
   font-size: 45px;
   color: black;
@@ -55,7 +55,7 @@
   display: block;
 }
 
-.nav-ul {
+.navUl {
   /* display: grid; */
   justify-content: center;
   align-items: center;
@@ -64,11 +64,11 @@
 
 }
 
-.nav-ul li:hover {
+.navUl li:hover {
   cursor: pointer;
 }
 
-.nav-ul a:hover {
+.navUl a:hover {
   cursor: pointer;
 }
 
@@ -101,23 +101,23 @@
 }
 
 
-.li-selector {
+.liSelector {
   display: inline;
   transition: all 300ms ease-in-out;
 
 }
 
 
-.li-selector:hover {
+.liSelector:hover {
   font-size: 60px;
 }
 
 
-.li-selector a:hover {
+.liSelector a:hover {
   font-size: 60px;
 }
 
-.li-selector a {
+.liSelector a {
   transition: all 300ms ease-in-out;
 }
 
