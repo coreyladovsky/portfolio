@@ -6,7 +6,7 @@ import $ from "jquery";
 class Skills extends React.Component {
   componentDidMount() {
     $(".menu-bars").css("color", "white");
-    $("html").css("background", "black");
+    $("html").css("background", "linear-gradient(#0e222b, black)");
   }
 
   render() {

@@ -7,7 +7,7 @@ class Contact extends React.Component {
 
   componentDidMount() {
     $(".menu-bars").css("color", "white");
-    $("html").css("background", "#4eb980");
+    $("html").css("background", "linear-gradient(#018E42, black)");
   }
 
 

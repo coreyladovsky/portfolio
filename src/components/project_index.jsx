@@ -12,7 +12,7 @@ import $ from "jquery";
 
 class ProjectIndex extends React.Component {
   render() {
-    $("html").css("background", "white");
+    $("html").css("background", "floralwhite");
     return (
       <div className="all-projects-container">
         <ProjectItem
