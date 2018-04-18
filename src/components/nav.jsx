@@ -14,21 +14,21 @@ class NavBar extends React.Component {
 
   toggleNav() {
     if (this.showing) {
-      $(".navContainer").removeClass("slideInLeft");
-      $(".navContainer").addClass("slideOutLeft");
+      $(".nav-container").removeClass("slideInLeft");
+      $(".nav-container").addClass("slideOutLeft");
       setTimeout(() => {
-        $(".navContainer").css("display", "none");
+        $(".nav-container").css("display", "none");
       }, 500);
     } else {
-      $(".navContainer").css("display", "grid");
-      $(".navContainer").removeClass("slideOutLeft");
-      $(".navContainer").addClass("slideInLeft");
+      $(".nav-container").css("display", "grid");
+      $(".nav-container").removeClass("slideOutLeft");
+      $(".nav-container").addClass("slideInLeft");
     }
     this.showing = !this.showing;
   }
 
   handleSelection(event) {
-    if (event.target.className === "liSelector") {
+    if (event.target.className === "li-selector") {
       let nextPage = event.target.innerText.toLowerCase();
       if (nextPage !== "resume") {
         this.props.history.push(`/${nextPage}`);
@@ -41,30 +41,30 @@ class NavBar extends React.Component {
     return (
       <div id="navBarContainer">
         <div className="menu">
-          <i className="fas fa fa-bars menuBars" onClick={this.toggleNav} />
+          <i className="fas fa fa-bars menu-bars" onClick={this.toggleNav} />
         </div>
         <div>
-          <div className="navContainer">
-            <div className="closeNav">
+          <div className="nav-container">
+            <div className="close-nav">
               <div onClick={this.toggleNav}>x</div>
             </div>
-            <ul onClick={this.handleSelection} className="navUl">
+            <ul onClick={this.handleSelection} className="nav-ul">
               <li className="about-nav">
-                <div className="liSelector">ABOUT</div>
+                <div className="li-selector">ABOUT</div>
               </li>
               <li className="projects-nav">
-                <div className="liSelector">PROJECTS</div>
+                <div className="li-selector">PROJECTS</div>
               </li>
               <li className="skills-nav">
-                <div className="liSelector">SKILLS</div>
+                <div className="li-selector">SKILLS</div>
               </li>
               <li className="contact-nav">
-                <div className="liSelector">CONTACT</div>
+                <div className="li-selector">CONTACT</div>
               </li>
-              <div className="liSelector">
+              <div className="li-selector">
                 <a
                   href={resume}
-                  className="resume-link-nav resumeNav"
+                  className="resume-link-nav resume-nav"
                   target="_blank"
                 >
                   RESUME
