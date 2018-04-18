@@ -6,7 +6,7 @@ import About from "./components/about";
 import Skills from "./components/skills";
 import ProjectIndex from "./components/project_index";
 import Contact from "./components/contact";
-
+import { baseUrl } from './index.js';
 class App extends Component {
 
   render() {
@@ -16,11 +16,11 @@ class App extends Component {
         <div className="App">
           <Route path="/" component={NavBar} />
           <Switch>
-            <Route exact path="/about" component={About} />
-            <Route exact path="/skills" component={Skills} />
-            <Route exact path="/projects" component={ProjectIndex} />
-            <Route exact path="/contact" component={Contact} />
-            <Route path="/*" component={About} />
+            <Route exact path={baseUrl + "/about"} component={About} />
+            <Route exact path={baseUrl +"/skills"} component={Skills} />
+            <Route exact path={baseUrl + "/projects"} component={ProjectIndex} />
+            <Route exact path={baseUrl + "/contact"} component={Contact} />
+            <Route path={baseUrl + "/*" }component={About} />
           </Switch>
         </div>
       </BrowserRouter>
