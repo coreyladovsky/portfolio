@@ -60,7 +60,7 @@ class Contact extends React.Component {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <i className="fa fa-github" aria-hidden="true" />
+              <i className="fab fa-github" aria-hidden="true" />
             </a>
           </li>
           <li>
@@ -70,7 +70,7 @@ class Contact extends React.Component {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <i className="fa fa-linkedin" aria-hidden="true" />
+              <i className="fab fa-linkedin" aria-hidden="true" />
             </a>
           </li>
           <li>
@@ -81,7 +81,7 @@ class Contact extends React.Component {
               rel="noopener noreferrer"
             >
               {" "}
-              <i className="fa fa-angellist" aria-hidden="true" />
+              <i className="fab fa-angellist" aria-hidden="true" />
             </a>
           </li>
         </div>

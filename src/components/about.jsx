@@ -2,12 +2,15 @@ import React from "react";
 import PhotoSlider from "./photos";
 import "./about.css";
 import $ from "jquery";
+import background from "../images/backg.jpg";
 
 class About extends React.Component {
-
   componentDidMount() {
     $(".menu-bars").css("color", "white");
-    $("html").css("background", "linear-gradient(darkred, black)");
+
+    $("html").css("background-image", "url(" + background + ")");
+    $("html").css("background-size", "cover");
+    // $("html").css("background-position", "100% 54%");
   }
 
   render() {
@@ -16,12 +19,12 @@ class About extends React.Component {
         <h1>COREY LADOVSKY</h1>
         <h3>Software Engineer</h3>
         <div className="about-section">
-              <PhotoSlider />
+          <PhotoSlider />
           <div>
             <h2>THE WHY</h2>
             <p className="bio">
               I originally moved to New York to be a professional musican and
-              writer. Being an artist, I am always looking for inspiration in
+              writer. As an artist, I am always looking for inspiration in
               everything; I look for that special something that ignites a spark
               in the depths of my being and stirs the pot of creativity. One day
               a friend of mine suggested that I should try programming. That
@@ -36,9 +39,7 @@ class About extends React.Component {
             </p>
           </div>
         </div>
-        <div>
-
-        </div>
+        <div />
         <div className="about-bonus">
           <p className="bio">
             In addition to my programming skills, I have a history as a trained
