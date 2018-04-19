@@ -62,7 +62,7 @@ class NavBar extends React.Component {
         <div>
           <div className="nav-container">
             <div className="close-nav">
-              <div onClick={this.toggleNav}>x</div>
+              <div onClick={this.toggleNav}><div className="nav-close">✕</div></div>
             </div>
             <ul onClick={this.handleSelection} className="nav-ul">
               <li className="about-nav">

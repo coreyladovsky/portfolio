@@ -41,12 +41,25 @@
   text-align: right;
 }
 
+.nav-close {
+  color: black;
+  transition: all 0.2s ease-in-out;
+  display: inline-block;
+  
+}
+
+.nav-close:hover {
+  cursor: pointer;
+  font-size: 55px;
+}
+
 .close-nav div {
   padding: 25px;
   font-size: 50px;
+  height: 60px;
 }
 
-.close-nav div:hover {
+.nav-close:hover {
   cursor: pointer;
 }
 
@@ -55,7 +68,7 @@
   font-size: 45px;
   color: black;
   text-decoration: none;
-  display: block;
+  display: inline-block;
 }
 
 .nav-ul {
@@ -67,7 +80,7 @@
 
 }
 
-.nav-ul li:hover {
+.nav-ul li div:hover {
   cursor: pointer;
 }
 
