@@ -43,6 +43,11 @@ class NavBar extends React.Component {
       return(
         <div className="project-header">PROJECTS</div>
       );
+    } else if(this.props.location.pathname === "/skills") {
+      return(
+        <div className="project-header skill-header">SKILLS</div>
+      );
+
     }
   }
 
@@ -52,6 +57,7 @@ class NavBar extends React.Component {
         <div className="menu">
           <i className="fas fa fa-bars menu-bars" onClick={this.toggleNav} />
           {this.location()}
+          <div></div>
         </div>
         <div>
           <div className="nav-container">
