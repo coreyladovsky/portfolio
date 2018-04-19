@@ -10,6 +10,7 @@ class NavBar extends React.Component {
     this.showing = false;
     this.handleSelection = this.handleSelection.bind(this);
     this.toggleNav = this.toggleNav.bind(this);
+    this.location  = this.location.bind(this);
   }
 
   toggleNav() {
@@ -37,11 +38,20 @@ class NavBar extends React.Component {
     this.toggleNav();
   }
 
+  location() {
+    if(this.props.location.pathname === "/projects") {
+      return(
+        <div className="project-header">PROJECTS</div>
+      );
+    }
+  }
+
   render() {
     return (
       <div id="navBarContainer">
         <div className="menu">
           <i className="fas fa fa-bars menu-bars" onClick={this.toggleNav} />
+          {this.location()}
         </div>
         <div>
           <div className="nav-container">
