@@ -10,8 +10,10 @@ class About extends React.Component {
 
     $("html").css("background-image", "url(" + background + ")");
     $("html").css("background-size", "cover");
-    // $("html").css("background-position", "100% 54%");
+
+    $("html").css("background-position", "100% 54%");
   }
+
 
   render() {
     return (

@@ -21,7 +21,7 @@
 
 }
 
-.img-container:hover .fa {
+.img-container:hover .icon {
   font-size: 80px;
   cursor: pointer;
 
@@ -66,7 +66,7 @@
 
 .project-links a {
   text-decoration: none;
-  color: #4eb980;
+  color: rgba(0, 0, 255);
 }
 
 .project-links a:hover {
@@ -116,6 +116,7 @@
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: 1fr 1fr 1fr;
+    background: rgba(255, 244, 255, 0.8)
   }
 
   .project-title {
