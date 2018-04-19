@@ -41,7 +41,7 @@ class NavBar extends React.Component {
   location() {
     if(this.props.location.pathname === "/projects") {
       return(
-        <div className="project-header">PROJECTS</div>
+        <div className="project-header projects-header">PROJECTS</div>
       );
     } else if(this.props.location.pathname === "/skills") {
       return(

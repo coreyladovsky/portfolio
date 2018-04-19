@@ -2,11 +2,16 @@ import React from "react";
 import reduxPic from "../images/redux.png";
 import "./skills.css";
 import $ from "jquery";
+import background from "../images/skill-pic.jpg";
 
 class Skills extends React.Component {
   componentDidMount() {
     $(".menu-bars").css("color", "white");
-    $("html").css("background", "linear-gradient(#0e222b, black)");
+    // $("html").css("background", "linear-gradient(#0e222b, black)");
+    $("html").css("background-image", "url(" + background + ")");
+    $("html").css("background-size", "cover");
+
+
   }
 
   render() {
