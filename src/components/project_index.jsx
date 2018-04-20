@@ -15,8 +15,8 @@ import background from "../images/back.jpg";
 class ProjectIndex extends React.Component {
 
   componentDidMount() {
-    $("html").css("background-image", "url(" + background + ")");
-    $("html").css("background-size", "cover");
+    // $("html").css("background-image", "url(" + background + ")");
+    // $("html").css("background-size", "cover");
 
   }
   render() {
