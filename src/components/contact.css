@@ -58,6 +58,8 @@ ul {
 
 }
 
+/* check */
+
 ::placeholder {
     color:  rgba(224, 224, 224, 0.75);
     opacity: 1;
