@@ -8,12 +8,12 @@ class About extends React.Component {
   componentDidMount() {
     $(".menu-bars").css("color", "white");
 
-    $("html").css("background-image", "url(" + background + ")");
-    $("html").css("background-size", "cover");
-
-    $("html").css("background-position", "100% 54%");
+    $("html").css({
+      "background-image": "url(" + background + ")",
+      "background-size": "cover",
+      "background-position": "100% 54%"
+    });
   }
-
 
   render() {
     return (

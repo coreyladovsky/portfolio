@@ -3,17 +3,15 @@ import "./contact.css";
 import $ from "jquery";
 import background from "../images/con1.jpg";
 
-
 class Contact extends React.Component {
-
   componentDidMount() {
     $(".menu-bars").css("color", "white");
-    // $("html").css("background", "linear-gradient(#018E42, black)");
 
-    $("html").css("background-image", "url(" + background + ")");
-    $("html").css("background-size", "cover");
+    $("html").css({
+      "background-image": "url(" + background + ")",
+      "background-size": "cover"
+    });
   }
-
 
   render() {
     return (
