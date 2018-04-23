@@ -14,3 +14,9 @@ body {min-height: 100%;}
    min-height: 100%;
    width: 100%;
  }
+
+ input {
+ -webkit-appearance: none;
+ -moz-appearance: none;
+ appearance: none;
+ }
