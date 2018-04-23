@@ -83,6 +83,11 @@ html {
   color: white;
 }
 
+.slick-next, .slick-prev {
+  width: inherit;
+  height: inherit;
+}
+
 @media only screen and (min-width: 620px) {
   .slick-next:before,
   .slick-prev:before {

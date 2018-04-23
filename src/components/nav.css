@@ -77,6 +77,7 @@
   align-items: center;
   list-style: none;
   margin-left: 5%;
+  -webkit-tap-highlight-color:  rgba(255, 255, 255, 0);
 
 }
 
