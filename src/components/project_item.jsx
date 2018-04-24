@@ -3,9 +3,8 @@ import "./project_item.css";
 import $ from "jquery";
 import { withRouter } from "react-router-dom";
 
-
 class ProjectItem extends React.Component {
-  constructor(props){
+  constructor(props) {
     super(props);
     this.goToLink = this.goToLink.bind(this);
   }
@@ -16,17 +15,29 @@ class ProjectItem extends React.Component {
   }
 
   goToLink(liveLink) {
-    window.open(liveLink, '_blank');
+    window.open(liveLink, "_blank");
   }
 
   render() {
-    const { image, liveLink, repoLink, description, title, facon, orderFirst, orderSecond } = this.props;
+    const {
+      image,
+      liveLink,
+      repoLink,
+      description,
+      title,
+      facon,
+      orderFirst,
+      orderSecond
+    } = this.props;
     return (
       <div className="project-container">
-        <div className={"img-container " + orderFirst} onClick={(e) => this.goToLink(liveLink)}>
-          <div className="blue-effect"></div>
+        <div
+          className={"img-container " + orderFirst}
+          onClick={e => this.goToLink(liveLink)}
+        >
+          <div className="blue-effect" />
           <img className="project-image" src={image} alt="" />
-          <i className={facon} aria-hidden="true"></i>
+          <i className={facon} aria-hidden="true" />
         </div>
         <div className={"project-info-container " + orderSecond}>
           <h2 className="project-title">{title}</h2>
@@ -40,9 +51,7 @@ class ProjectItem extends React.Component {
               Code
             </a>
           </div>
-
         </div>
-
       </div>
     );
   }

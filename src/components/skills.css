@@ -28,7 +28,6 @@
 }
 
 .redux-pic {
-  /* margin: auto; */
   width: 65px;
   object-fit: cover;
 }

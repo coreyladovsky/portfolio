@@ -1,13 +1,10 @@
 .menu {
   display: flex;
   font-size: 16px;
-  /* justify-content: flex-end; */
   align-items: center;
   justify-content: space-between;
   min-width: 275px;
 }
-
-
 
 .menu-bars {
   padding: 25px;
@@ -28,8 +25,8 @@
   top: 0;
   min-height: 100%;
   background: white;
-  opacity: .93;
-  font-family: 'Stardos Stencil', cursive;
+  opacity: 0.93;
+  font-family: "Stardos Stencil", cursive;
   font-size: 45px;
   z-index: 100;
   grid-template-rows: 1fr 5fr;
@@ -45,7 +42,6 @@
   color: black;
   transition: all 0.2s ease-in-out;
   display: inline-block;
-
 }
 
 .nav-close:hover {
@@ -64,7 +60,7 @@
 }
 
 .resume-nav {
-  font-family: 'Stardos Stencil', cursive;
+  font-family: "Stardos Stencil", cursive;
   font-size: 45px;
   color: black;
   text-decoration: none;
@@ -72,13 +68,11 @@
 }
 
 .nav-ul {
-  /* display: grid; */
   justify-content: center;
   align-items: center;
   list-style: none;
   margin-left: 5%;
-  -webkit-tap-highlight-color:  rgba(255, 255, 255, 0);
-
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
 
 .nav-ul li div:hover {
@@ -90,12 +84,12 @@
 }
 
 .slideInLeft {
-  animation-duration: .5s;
+  animation-duration: 0.5s;
   animation-name: leftSlideIn;
 }
 
 .slideOutLeft {
-  animation-duration: .5s;
+  animation-duration: 0.5s;
   animation-name: leftSlideOut;
 }
 
@@ -117,18 +111,14 @@
   }
 }
 
-
 .li-selector {
   display: inline;
   transition: all 300ms ease-in-out;
-
 }
-
 
 .li-selector:hover {
   font-size: 60px;
 }
-
 
 .li-selector a:hover {
   font-size: 60px;
@@ -139,7 +129,7 @@
 }
 
 .project-header {
-  font-family: 'Stardos Stencil', cursive;
+  font-family: "Stardos Stencil", cursive;
   font-size: 30px;
   margin-left: -70px;
   border-radius: 5px;
@@ -158,5 +148,3 @@
     font-size: 50px;
   }
 }
-
-/* comment */

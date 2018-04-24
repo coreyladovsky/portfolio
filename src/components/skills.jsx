@@ -7,11 +7,10 @@ import background from "../images/skill-pic.jpg";
 class Skills extends React.Component {
   componentDidMount() {
     $(".menu-bars").css("color", "white");
-    // $("html").css("background", "linear-gradient(#0e222b, black)");
-    $("html").css("background-image", "url(" + background + ")");
-    $("html").css("background-size", "cover");
-
-
+    $("html").css({
+      "background-image": "url(" + background + ")",
+      "background-size": "cover"
+    });
   }
 
   render() {
