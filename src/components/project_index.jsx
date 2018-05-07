@@ -31,7 +31,7 @@ class ProjectIndex extends React.Component {
           liveLink={"https://www.coreyladovsky.com/Maze-Spinner/"}
           repoLink={"https://github.com/coreyladovsky/Maze-Spinner"}
           description={
-            "Navigate your way through multiple mazes while they randomly rotate. Built with JavaScript, HTML5, jQuery, and Cavas."
+            "Navigate your way through multiple mazes while they randomly rotate. Built with JavaScript, HTML5, jQuery, and Canvas."
           }
           image={mazeSpinner}
           facon={"icon fa fa-gamepad"}
