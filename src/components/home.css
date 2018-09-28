@@ -1,4 +1,4 @@
-
+/* 
 
 
 .home-ul {
@@ -6,7 +6,6 @@
   grid-template-columns: repeat(minmax(400px), 2);
   grid-template-rows: repeat(1fr, auto);
   list-style: none;
-  /* grid-gap: 1em; */
   text-align: center;
   font-family: 'Alegreya Sans', sans-serif;
   font-size: 50px;
@@ -62,4 +61,4 @@
   justify-content: center;
   align-items: center;
 
-}
+} */

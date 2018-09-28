@@ -10,20 +10,23 @@ class NavBar extends React.Component {
     this.showing = false;
     this.handleSelection = this.handleSelection.bind(this);
     this.toggleNav = this.toggleNav.bind(this);
-    this.location  = this.location.bind(this);
+    this.location = this.location.bind(this);
   }
 
   toggleNav() {
+    let navContainer = $(".nav-container");
     if (this.showing) {
-      $(".nav-container").removeClass("slideInLeft");
-      $(".nav-container").addClass("slideOutLeft");
+      navContainer
+        .removeClass("slideInLeft")
+        .addClass("slideOutLeft");
       setTimeout(() => {
-        $(".nav-container").css("display", "none");
+        navContainer.css("display", "none");
       }, 500);
     } else {
-      $(".nav-container").css("display", "grid");
-      $(".nav-container").removeClass("slideOutLeft");
-      $(".nav-container").addClass("slideInLeft");
+      navContainer
+        .css("display", "grid")
+        .removeClass("slideOutLeft")
+        .addClass("slideInLeft");
     }
     this.showing = !this.showing;
   }
@@ -39,15 +42,10 @@ class NavBar extends React.Component {
   }
 
   location() {
-    if(this.props.location.pathname === "/projects") {
-      return(
-        <div className="project-header">PROJECTS</div>
-      );
-    } else if(this.props.location.pathname === "/skills") {
-      return(
-        <div className="project-header skill-header">SKILLS</div>
-      );
-
+    if (this.props.location.pathname === "/projects") {
+      return <div className="project-header projects-header">PROJECTS</div>;
+    } else if (this.props.location.pathname === "/skills") {
+      return <div className="project-header skill-header">SKILLS</div>;
     }
   }
 
@@ -57,12 +55,14 @@ class NavBar extends React.Component {
         <div className="menu">
           <i className="fas fa fa-bars menu-bars" onClick={this.toggleNav} />
           {this.location()}
-          <div></div>
+          <div />
         </div>
         <div>
           <div className="nav-container">
             <div className="close-nav">
-              <div onClick={this.toggleNav}><div className="nav-close">✕</div></div>
+              <div onClick={this.toggleNav}>
+                <div className="nav-close">✕</div>
+              </div>
             </div>
             <ul onClick={this.handleSelection} className="nav-ul">
               <li className="about-nav">
