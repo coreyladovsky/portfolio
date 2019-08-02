@@ -6,6 +6,9 @@ import NBAStats from "../images/nba_stats.png";
 import MasterDomain from "../images/master_of_the_domain.png";
 import StockStudy from "../images/stock_study.png";
 import Carousel from "../images/carousel.png";
+import Overflow from "../images/overflow.png";
+import tictactoe from "../images/tictactoe.png";
+import WordLadder from "../images/wordladder.png";
 import "./project_index.css";
 import $ from "jquery";
 import background from "../images/back.jpg";
@@ -83,6 +86,40 @@ class ProjectIndex extends React.Component {
           facon={"icon fa fa-camera-retro"}
           orderFirst="secondImg"
           orderSecond="firstImg"
+        />
+        <ProjectItem
+          title={"Overflow"}
+          liveLink={"https://www.coreyladovsky.com/overflow-game/"}
+          repoLink={"https://github.com/coreyladovsky/overflow-game"}
+          description={
+            "An interactive and highly addictive color changing game made with React"
+          }
+          image={Overflow}
+          facon={"icon fa fa-gamepad"}
+          orderFirst="firstImg"
+          orderSecond="secondImg"
+        />
+        <ProjectItem
+          title={"WordLadder"}
+          liveLink={"https://www.coreyladovsky.com/wordLadder/"}
+          repoLink={"https://github.com/coreyladovsky/wordLadder"}
+          description={"A JavaScript word network that finds the shortest path between two words of equal length changing only one character at a time."}
+          image={WordLadder}
+          facon={"icon fa fa-book"}
+          orderFirst="secondImg"
+          orderSecond="firstImg"
+        />
+        <ProjectItem
+          title={"TickyTacky"}
+          liveLink={"https://www.coreyladovsky.com/tickyTacky/"}
+          repoLink={"https://github.com/coreyladovsky/tickyTacky"}
+          description={
+            "An all JavaScript two player tic tac toe game."
+          }
+          image={tictactoe}
+          facon={"icon fa fa-gamepad"}
+          orderFirst="firstImg"
+          orderSecond="secondImg"
         />
       </div>
     );
