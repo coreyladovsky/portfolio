@@ -9,6 +9,8 @@ import Carousel from "../images/carousel.png";
 import Overflow from "../images/overflow.png";
 import tictactoe from "../images/tictactoe.png";
 import WordLadder from "../images/wordladder.png";
+import Connect4 from "../images/connect4.png";
+import Calculator from "../images/calculator.png";
 import "./project_index.css";
 import $ from "jquery";
 import background from "../images/back.jpg";
@@ -105,6 +107,28 @@ class ProjectIndex extends React.Component {
           repoLink={"https://github.com/coreyladovsky/wordLadder"}
           description={"A JavaScript word network that finds the shortest path between two words of equal length changing only one character at a time."}
           image={WordLadder}
+          facon={"icon fa fa-book"}
+          orderFirst="secondImg"
+          orderSecond="firstImg"
+        />
+        <ProjectItem
+          title={"Connect 4"}
+          liveLink={"http://www.coreyladovsky.com/connect4/"}
+          repoLink={"https://github.com/coreyladovsky/connect4"}
+          description={
+            "A classic childhood game built with Object Oriented JavaScript"
+          }
+          image={Connect4}
+          facon={"icon fa fa-gamepad"}
+          orderFirst="firstImg"
+          orderSecond="secondImg"
+        />
+        <ProjectItem
+          title={"Calculator"}
+          liveLink={"http://www.coreyladovsky.com/calculator/"}
+          repoLink={"https://github.com/coreyladovsky/calculator"}
+          description={"A React calulator with identical behaivor to the popular Iphone calulator."}
+          image={Calculator}
           facon={"icon fa fa-book"}
           orderFirst="secondImg"
           orderSecond="firstImg"
