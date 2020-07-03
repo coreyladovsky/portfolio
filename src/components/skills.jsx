@@ -57,6 +57,14 @@ class Skills extends React.Component {
             <i className="devicon-d3js-plain colored skill" />
             D3.js
           </li>
+          <li>
+            <i className="devicon-nodejs-plain colored skill" />
+            Node
+          </li>
+          <li>
+            <i className="devicon-express-original colored skill" />
+            Express
+          </li>
         </ul>
       </div>
     );
